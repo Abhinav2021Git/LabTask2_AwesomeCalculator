@@ -86,7 +86,31 @@ namespace TestProject1
             Assert.AreEqual(36.00d, Calculator.result); //assert
         }
 
+        [Test]
+        public void Test1_Division_Ten_Divided_By_Three_EqualsTo_ThreeDecimalThreeThree()
+        {
+            Calculator.num1 = 10.000d;//arrange
+            Calculator.num2 = 3.00d;//arrange
+            Calculator.Division(Calculator.num1, Calculator.num2); //act
+            Assert.AreEqual(3.33d, Calculator.result); //assert
+        }
+        [Test]
+        public void Test2_Division_Nine_Divided_By_Three_EqualsTo_Three()
+        {
+            Calculator.num1 = 9.00d;//arrange
+            Calculator.num2 = 3.00d;//arrange
+            Calculator.Division(Calculator.num1, Calculator.num2); //act
+            Assert.AreEqual(3.00d, Calculator.result); //assert
+        }
 
+        [Test]
+        public void Test3_Division_Seven_Divided_By_Two_EqualsTo_ThreeDecimalFive()
+        {
+            Calculator.num1 = 7.00d;//arrange
+            Calculator.num2 = 2.00d;//arrange
+            Calculator.Division(Calculator.num1, Calculator.num2); //act
+            Assert.AreEqual(3.50d, Calculator.result); //assert
+        }
 
     }
 }
