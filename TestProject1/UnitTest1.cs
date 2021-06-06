@@ -59,6 +59,34 @@ namespace TestProject1
             Assert.AreEqual(2.00d, Calculator.result); //assert
         }
 
+        [Test]
+        public void Test1_Multiplication_Two_Multiply_By_TwoDecimalFiveZero_EqualsTo_Five()
+        {
+            Calculator.num1 = 2.00d;//arrange
+            Calculator.num2 = 2.50d;//arrange
+            Calculator.Multiplication(Calculator.num1, Calculator.num2); //act
+            Assert.AreEqual(5d, Calculator.result); //assert
+        }
+
+        [Test]
+        public void Test2_Multiplication_Five_Multiply_By_Five_EqualsTo_TwentyFive()
+        {
+            Calculator.num1 = 5.00d;//arrange
+            Calculator.num2 = 5.00d;//arrange
+            Calculator.Multiplication(Calculator.num1, Calculator.num2); //act
+            Assert.AreEqual(25d, Calculator.result); //assert
+        }
+
+        [Test]
+        public void Test3_Multiplication_Six_Multiply_By_Six_EqualsTo_ThirtySix()
+        {
+            Calculator.num1 = 6.000d;//arrange
+            Calculator.num2 = 6.0000d;//arrange
+            Calculator.Multiplication(Calculator.num1, Calculator.num2); //act
+            Assert.AreEqual(36.00d, Calculator.result); //assert
+        }
+
+
 
     }
 }
