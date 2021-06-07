@@ -9,12 +9,12 @@ namespace LabTask2
         public static double result;
         public static double num1, num2;
 
-        public static void Addition(double num1, double num2)
+        public static void Addition(double n1, double n2)
         {
             try
             {
-                result = Math.Round(num1 + num2, 2, MidpointRounding.AwayFromZero);
-                Console.WriteLine("The Sum of {0} and {1} post rounding off 2-decimal digits(if exist) is = {2}", num1, num2, result);
+                result = Math.Round(n1 + n2, 2, MidpointRounding.AwayFromZero);
+                Console.WriteLine("The Sum of {0} and {1} post rounding off 2-decimal digits(if exist) is = {2}", n1, n2, result);
             }
             catch (Exception e)
             {
@@ -22,12 +22,12 @@ namespace LabTask2
             }
         }
 
-        public static void Subtraction(double num1, double num2)
+        public static void Subtraction(double n1, double n2)
         {
             try
             {
-                result = Math.Round((num1 - num2), 2, MidpointRounding.AwayFromZero);
-                Console.WriteLine("After Subtracting {1} from {0}, the result after rounding off 2-decimal digits(if exist) is : {2}", num1, num2, result);
+                result = Math.Round((n1 - n2), 2, MidpointRounding.AwayFromZero);
+                Console.WriteLine("After Subtracting {1} from {0}, the result after rounding off 2-decimal digits(if exist) is : {2}", n1, n2, result);
             }
             catch (Exception e)
             {
@@ -35,12 +35,12 @@ namespace LabTask2
             }
         }
 
-        public static void Multiplication(double num1, double num2)
+        public static void Multiplication(double n1, double n2)
         {
             try
             {
-                result = Math.Round((num1 * num2), 2, MidpointRounding.AwayFromZero);
-                Console.WriteLine("The Multiplication result of {0} and {1} post rounding off 2-decimal digits(if exist) is : {2}", num1, num2, result);
+                result = Math.Round((n1 * n2), 2, MidpointRounding.AwayFromZero);
+                Console.WriteLine("The Multiplication result of {0} and {1} post rounding off 2-decimal digits(if exist) is : {2}", n1, n2, result);
             }
             catch (Exception e)
             {
@@ -48,14 +48,14 @@ namespace LabTask2
             }
         }
 
-        public static void Division(double num1, double num2)
+        public static void Division(double n1, double n2)
         {
             try
             {
-                if (num2 != 0)
+                if (n2 != 0)
                 {
-                    result = Math.Round((num1 / num2), 2, MidpointRounding.AwayFromZero);
-                    Console.WriteLine("The division result of {0} & {1} post rounding off 2-decimal digits(if exist) is : {2}", num1, num2, result);
+                    result = Math.Round((n1 / n2), 2, MidpointRounding.AwayFromZero);
+                    Console.WriteLine("The division result of {0} & {1} post rounding off 2-decimal digits(if exist) is : {2}", n1, n2, result);
                 }
                 else
                     Console.WriteLine("Wrong input, please try again later");
