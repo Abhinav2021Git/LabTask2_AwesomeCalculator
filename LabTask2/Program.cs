@@ -14,6 +14,7 @@ namespace LabTask2
                 Console.WriteLine("2. Subtraction");
                 Console.WriteLine("3. Multiplication");
                 Console.WriteLine("4. Division");
+                Console.WriteLine("0. Exit");
 
                 Console.WriteLine("Hey User! Which operation you would like to perform?:");
                 int choice = Convert.ToInt32(Console.ReadLine());
@@ -41,6 +42,9 @@ namespace LabTask2
 
                     case 4:
                         Calculator.Division(Calculator.num1, Calculator.num2);
+                        break;
+
+                    case 0:
                         break;
 
                     default:
